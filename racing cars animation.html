@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <title>Animation of three cars</title>
+
+    <style>
+        #cars {
+
+          font-weight: bold;
+          position: relative;
+ 
+          animation: RacingCars 5s ;
+          bottom:90px;
+
+        }
+
+  
+
+        body {
+            background-image: url(racingTrack.jpg);
+        }
+       
+
+        #movement {
+            margin-bottom:180px;
+        }
+       
+        
+
+
+
+#firstCar {animation-timing-function: linear;}
+#secondCar {animation-timing-function: ease-out;}
+#thirdCar {animation-timing-function: ease-in-out;}
+
+
+
+@keyframes RacingCars {
+  from {left: 0px;}
+  to {left: 2000px;}
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="peopleWatch">
+        <img src="people.jpg" width="100px" height="100px">
+    </div>
+
+    <br><br><br><br>
+<div id="cars">
+    <div id="firstCar"><img src="Car-TransparentOne.png" width= "300px" height="200px"></div>
+    <div id="secondCar"><img src="carTransparentTwo.png" width="300px" height="200px"></div>
+    <div id="thirdCar"><img src="carTransparentThree.png" width="300px" height="200px"></div>
+</div>
+
+
+
+
+    <button type="button" onclick="startMovement()" id="movement">Start Race</button>
+
+
+
+
+
+
+
+    <script>
+
+        function startMovement() {
+            location.reload();
+        }
+        
+
+        
+    </script>
+</body>
+
+</html>
